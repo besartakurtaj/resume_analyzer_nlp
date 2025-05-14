@@ -27,9 +27,9 @@ def index(request):
             skills_matched = ', '.join(matched)
         )
 
-        return render(request, 'C:\\Users\\Besarta Kurtaj\\Desktop\\improve\\npl-project\\resume_analyzer\\core\\templates\\result.html', {
+        return render(request, '../templates/result.html', {
             'score' : score,
             'skills': matched
         })
     
-    return render(request, 'C:\\Users\\Besarta Kurtaj\\Desktop\\improve\\npl-project\\resume_analyzer\\core\\templates\\index.html')
+    return render(request, '../templates/index.html')
