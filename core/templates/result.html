@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Match Score: {{ score }}%</h3>
+<h4>Matched Skills:</h4>
+<ul>
+    {% for skill in skills %}
+    <li>{{ skill }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'index' %}" class="btn btn-secondary">Try Again</a>
+{% endblock %}
