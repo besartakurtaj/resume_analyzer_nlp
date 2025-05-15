@@ -11,17 +11,8 @@ PDF Parsing: PyPDF2
 Database: SQLite (default)
 ## Project Structure:
 
-resume-analyzer-nlp/
-├── core/                     # Main Django app
-│   ├── views.py              # Core logic (upload, analyze, score)
-│   ├── models.py             # Resume, JobDescription, MatchResult
-│   ├── utils.py              # NLP functions (extract skills, compute score)
-│   └── templates/            # HTML templates (index and result)
-├── resume/                   # Uploaded resumes
-├── db.sqlite3                # Default database
-├── manage.py
-├── requirements.txt
-└── README.md
+![image](https://github.com/user-attachments/assets/fc024093-a860-47c6-9f8b-f5767eedf622)
+
 
 ## How It Works
 
