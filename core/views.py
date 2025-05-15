@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Resume, JobDescription, MatchResult
 from .utils import extract_skills, compute_score
+from PyPDF2 import PdfReader
+
 
 def index(request):
     if request.method == 'POST':
@@ -10,7 +12,6 @@ def index(request):
         resume = Resume.objects.create(file = resume_file)
         jd = JobDescription.objects.create(content=jobdesc_text)
 
-        from PyPDF2 import PdfReader
         text = ''
         if resume_file.name.endswith('.pdf'):
             reader = PdfReader(resume_file)
