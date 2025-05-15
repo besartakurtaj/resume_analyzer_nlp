@@ -25,19 +25,19 @@ Database: SQLite (default)
 
 ## Setup Instructions
 
-1. Clone the Repo
+### 1. Clone the Repo
    git clone https://github.com/besartakurtaj/resume_analyzer_nlp.git
    cd resume-analyzer-nlp
 
-2. Download NLTK Data (once)
+### 2. Download NLTK Data (once)
     import nltk
     nltk.download('punkt')
     nltk.download('stopwords')
 
-3. Run Migrations
+#### 3. Run Migrations
    python manage.py migrate
 
-4. Start the Server
+#### 4. Start the Server
   python manage.py runserver
 
 ## Contributing
